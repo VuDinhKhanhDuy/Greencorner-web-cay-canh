@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tài Khoản - Đăng Nhập & Đăng Ký - GreenCorner</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="site-logo">
+        <span class="logo-leaf">🌿</span>
+        <span>GreenCorner</span>
+      </a>
+
+      <nav class="main-navigation">
+        <a href="index.html" class="nav-link">Trang chủ</a>
+        <a href="about.html" class="nav-link">Giới thiệu</a>
+        <a href="products.html" class="nav-link">Sản phẩm</a>
+        <a href="contact.html" class="nav-link">Liên hệ</a>
+        <a href="feedback.html" class="nav-link">Góp ý</a>
+        <a href="blog.html" class="nav-link">Cẩm nang</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="auth.html" class="btn btn-secondary btn-sm" style="border-color: var(--primary-color); background-color: var(--primary-color); color: #fff;">Tài khoản</a>
+        <a href="products.html" class="btn btn-primary btn-sm">Mua ngay</a>
+        <button class="mobile-toggle" aria-label="Menu di động">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb-section">
+    <div class="container">
+      <div class="breadcrumb-list">
+        <a href="index.html">Trang chủ</a>
+        <span class="breadcrumb-separator">/</span>
+        <span class="breadcrumb-current">Tài khoản thành viên</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN AUTH CONTAINER -->
+  <main class="container section-padding">
+    <div class="auth-wrapper">
+      <!-- CỘT ẢNH BÊN TRÁI -->
+      <div class="auth-banner-side">
+        <img src="images/auth-banner.jpg" alt="Không gian cây xanh GreenCorner">
+        <div class="auth-banner-overlay">
+          <h3 style="font-size: 1.4rem; margin-bottom: 8px;">Cộng Đồng Yêu Cây</h3>
+          <p style="font-size: 0.92rem; color: #e0eee4;">Đăng ký thành viên để lưu lại các loại cây yêu thích, theo dõi lịch bảo hành và nhận ưu đãi độc quyền hàng tháng.</p>
+        </div>
+      </div>
+
+      <!-- CỘT FORM CHUYỂN TAB BÊN PHẢI -->
+      <div class="auth-form-side">
+        <!-- 2 TAB NÚT CHUYỂN -->
+        <div class="auth-tabs">
+          <button type="button" class="auth-tab-btn active" data-tab="loginPanel">Đăng Nhập</button>
+          <button type="button" class="auth-tab-btn" data-tab="registerPanel">Đăng Ký Mới</button>
+        </div>
+
+        <!-- FORM 1: ĐĂNG NHẬP -->
+        <div class="auth-form-panel active" id="loginPanel">
+          <form id="loginForm">
+            <div class="form-group">
+              <label class="form-label" for="loginEmail">Email hoặc Tên đăng nhập *</label>
+              <input type="text" id="loginEmail" class="form-control" placeholder="name@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="loginPass">Mật khẩu *</label>
+              <input type="password" id="loginPass" class="form-control" placeholder="Nhập mật khẩu của bạn..." required>
+            </div>
+
+            <div class="auth-flex-row">
+              <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; color: var(--text-muted);">
+                <input type="checkbox" checked style="accent-color: var(--primary-color);">
+                <span>Ghi nhớ mật khẩu</span>
+              </label>
+              <a href="#" style="color: var(--primary-color); font-weight: 500;" onclick="alert('Vui lòng liên hệ hotline 0909 123 456 để đặt lại mật khẩu!')">Quên mật khẩu?</a>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">Đăng Nhập Ngay</button>
+          </form>
+        </div>
+
+        <!-- FORM 2: ĐĂNG KÝ -->
+        <div class="auth-form-panel" id="registerPanel">
+          <form id="registerForm">
+            <div class="form-group">
+              <label class="form-label" for="regName">Họ và tên *</label>
+              <input type="text" id="regName" class="form-control" placeholder="Ví dụ: Trần Văn C" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="regEmail">Địa chỉ Email *</label>
+              <input type="email" id="regEmail" class="form-control" placeholder="name@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="regPass">Mật khẩu mới *</label>
+              <input type="password" id="regPass" class="form-control" placeholder="Tối thiểu 6 ký tự" required minlength="6">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="regConfirmPass">Xác nhận lại mật khẩu *</label>
+              <input type="password" id="regConfirmPass" class="form-control" placeholder="Nhập lại mật khẩu mới" required minlength="6">
+            </div>
+
+            <div class="form-group" style="display: flex; align-items: flex-start; gap: 8px;">
+              <input type="checkbox" id="regTerms" required style="margin-top: 4px; accent-color: var(--primary-color);">
+              <label for="regTerms" style="font-size: 0.88rem; color: var(--text-muted); cursor: pointer;">
+                Tôi đồng ý với Điều khoản dịch vụ và Chính sách thành viên của GreenCorner.
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">Tạo Tài Khoản Thành Viên</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="site-logo" style="margin-bottom: 16px;">
+            <span class="logo-leaf" style="background-color: var(--primary-hover);">🌿</span>
+            <span style="color: #ffffff;">GreenCorner</span>
+          </div>
+          <p>GreenCorner là không gian dành cho những người yêu thiên nhiên, chuyên cung cấp cây cảnh mini để bàn, sen đá và chậu gốm mộc tinh tế.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Trang Chính</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="about.html">Giới thiệu</a></li>
+            <li><a href="products.html">Sản phẩm cây cảnh</a></li>
+            <li><a href="blog.html">Cẩm nang chăm sóc</a></li>
+            <li><a href="contact.html">Liên hệ tư vấn</a></li>
+            <li><a href="feedback.html">Hòm thư góp ý</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Chính Sách</h4>
+          <ul class="footer-links">
+            <li><a href="#">Chính sách bảo hành 7 ngày</a></li>
+            <li><a href="#">Quy định vận chuyển giao hàng</a></li>
+            <li><a href="#">Hình thức thanh toán</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Thông Tin Liên Hệ</h4>
+          <div class="footer-contact-item"><span>📍</span><p>123 Đường Cây Xanh, Q.1, TP.HCM</p></div>
+          <div class="footer-contact-item"><span>📞</span><p>Hotline: 0909 123 456</p></div>
+          <div class="footer-contact-item"><span>✉️</span><p>Email: contact@greencorner.vn</p></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 GreenCorner. Tất cả các quyền được bảo lưu.</p>
+        <p>Đồ án môn học Lập trình Web - Giai đoạn 2</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

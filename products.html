@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sản Phẩm Cây Cảnh - GreenCorner</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="site-logo">
+        <span class="logo-leaf">🌿</span>
+        <span>GreenCorner</span>
+      </a>
+
+      <nav class="main-navigation">
+        <a href="index.html" class="nav-link">Trang chủ</a>
+        <a href="about.html" class="nav-link">Giới thiệu</a>
+        <a href="products.html" class="nav-link active">Sản phẩm</a>
+        <a href="contact.html" class="nav-link">Liên hệ</a>
+        <a href="feedback.html" class="nav-link">Góp ý</a>
+        <a href="blog.html" class="nav-link">Cẩm nang</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="auth.html" class="btn btn-secondary btn-sm">Tài khoản</a>
+        <a href="products.html" class="btn btn-primary btn-sm">Mua ngay</a>
+        <button class="mobile-toggle" aria-label="Menu di động">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb-section">
+    <div class="container">
+      <div class="breadcrumb-list">
+        <a href="index.html">Trang chủ</a>
+        <span class="breadcrumb-separator">/</span>
+        <span class="breadcrumb-current">Sản phẩm cây cảnh</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CATALOG CONTENT -->
+  <main class="container">
+    <div class="catalog-layout">
+      <!-- SIDEBAR BỘ LỌC BÊN TRÁI -->
+      <aside class="filter-sidebar">
+        <div class="filter-widget">
+          <h3 class="filter-title">Danh Mục Cây</h3>
+          <ul class="filter-options">
+            <li>
+              <label>
+                <input type="radio" name="category-filter" value="all" checked>
+                <span>Tất cả sản phẩm (6)</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="category-filter" value="senda">
+                <span>Sen đá & Xương rồng (2)</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="category-filter" value="deban">
+                <span>Cây để bàn văn phòng (1)</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="category-filter" value="phongthuy">
+                <span>Cây phong thủy theo mệnh (2)</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="category-filter" value="lockhongkhi">
+                <span>Cây lọc không khí (1)</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="filter-widget">
+          <h3 class="filter-title">Khoảng Giá</h3>
+          <ul class="filter-options">
+            <li>
+              <label><input type="checkbox" checked> <span>Dưới 50.000đ</span></label>
+            </li>
+            <li>
+              <label><input type="checkbox" checked> <span>50.000đ - 100.000đ</span></label>
+            </li>
+            <li>
+              <label><input type="checkbox"> <span>Trên 100.000đ</span></label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="filter-widget">
+          <h3 class="filter-title">Theo Bản Mệnh</h3>
+          <ul class="filter-options">
+            <li><label><input type="checkbox"> <span>Mệnh Kim</span></label></li>
+            <li><label><input type="checkbox"> <span>Mệnh Mộc</span></label></li>
+            <li><label><input type="checkbox"> <span>Mệnh Thủy</span></label></li>
+            <li><label><input type="checkbox"> <span>Mệnh Hỏa</span></label></li>
+            <li><label><input type="checkbox"> <span>Mệnh Thổ</span></label></li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- KHU VỰC HIỂN THỊ SẢN PHẨM BÊN PHẢI -->
+      <section class="catalog-main">
+        <div class="catalog-top-bar">
+          <div class="catalog-count">Hiển thị <strong>6</strong> sản phẩm cây cảnh</div>
+          <div class="catalog-sort">
+            <label for="sortSelect">Sắp xếp theo:</label>
+            <select id="sortSelect">
+              <option value="popular">Phổ biến nhất</option>
+              <option value="price-asc">Giá: Thấp đến cao</option>
+              <option value="price-desc">Giá: Cao đến thấp</option>
+              <option value="newest">Mới nhất</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="products-grid catalog-products" style="grid-template-columns: repeat(3, 1fr);">
+          <!-- Card 1 -->
+          <article class="product-card" data-category="senda">
+            <div class="product-thumb">
+              <span class="product-badge">-15%</span>
+              <img src="images/prod-senda-nau.jpg" alt="Sen đá Socola">
+            </div>
+            <div class="product-info">
+              <span class="product-category">Sen đá</span>
+              <h3 class="product-name">Sen Đá Nâu (Socola)</h3>
+              <div class="product-rating">★★★★★ (48 đánh giá)</div>
+              <div class="product-bottom">
+                <div>
+                  <span class="product-price">45.000đ</span>
+                  <span class="product-old-price">55.000đ</span>
+                </div>
+                <a href="contact.html" class="btn btn-primary btn-sm">Mua ngay</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="product-card" data-category="phongthuy">
+            <div class="product-thumb">
+              <span class="product-badge">Hot</span>
+              <img src="images/prod-kim-ngan.jpg" alt="Cây Kim Ngân để bàn">
+            </div>
+            <div class="product-info">
+              <span class="product-category">Phong thủy</span>
+              <h3 class="product-name">Cây Kim Ngân May Mắn</h3>
+              <div class="product-rating">★★★★★ (62 đánh giá)</div>
+              <div class="product-bottom">
+                <div>
+                  <span class="product-price">85.000đ</span>
+                </div>
+                <a href="contact.html" class="btn btn-primary btn-sm">Mua ngay</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="product-card" data-category="lockhongkhi">
+            <div class="product-thumb">
+              <img src="images/prod-luoi-ho.jpg" alt="Cây Lưỡi Hổ Thái">
+            </div>
+            <div class="product-info">
+              <span class="product-category">Lọc không khí</span>
+              <h3 class="product-name">Cây Lưỡi Hổ Vàng Mini</h3>
+              <div class="product-rating">★★★★☆ (35 đánh giá)</div>
+              <div class="product-bottom">
+                <div>
+                  <span class="product-price">75.000đ</span>
+                </div>
+                <a href="contact.html" class="btn btn-primary btn-sm">Mua ngay</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="product-card" data-category="deban">
+            <div class="product-thumb">
+              <span class="product-badge">-20%</span>
+              <img src="images/prod-trau-ba.jpg" alt="Trầu Bà Cẩm Thạch">
+            </div>
+            <div class="product-info">
+              <span class="product-category">Cây để bàn</span>
+              <h3 class="product-name">Trầu Bà Cẩm Thạch</h3>
+              <div class="product-rating">★★★★★ (51 đánh giá)</div>
+              <div class="product-bottom">
+                <div>
+                  <span class="product-price">65.000đ</span>
+                  <span class="product-old-price">80.000đ</span>
+                </div>
+                <a href="contact.html" class="btn btn-primary btn-sm">Mua ngay</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="product-card" data-category="senda">
+            <div class="product-thumb">
+              <img src="images/prod-xuong-rong.jpg" alt="Xương Rồng Thanh Sơn">
+            </div>
+            <div class="product-info">
+              <span class="product-category">Xương rồng</span>
+              <h3 class="product-name">Xương Rồng Thanh Sơn</h3>
+              <div class="product-rating">★★★★★ (29 đánh giá)</div>
+              <div class="product-bottom">
+                <div>
+                  <span class="product-price">40.000đ</span>
+                </div>
+                <a href="contact.html" class="btn btn-primary btn-sm">Mua ngay</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="product-card" data-category="phongthuy">
+            <div class="product-thumb">
+              <span class="product-badge">Mới</span>
+              <img src="images/prod-ngoc-ngan.jpg" alt="Cây Ngọc Ngân">
+            </div>
+            <div class="product-info">
+              <span class="product-category">Phong thủy</span>
+              <h3 class="product-name">Cây Ngọc Ngân Cẩm Thạch</h3>
+              <div class="product-rating">★★★★★ (43 đánh giá)</div>
+              <div class="product-bottom">
+                <div>
+                  <span class="product-price">90.000đ</span>
+                </div>
+                <a href="contact.html" class="btn btn-primary btn-sm">Mua ngay</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- PHÂN TRANG (PAGINATION) -->
+        <div class="pagination">
+          <a href="#" class="page-btn">&laquo;</a>
+          <a href="#" class="page-btn active">1</a>
+          <a href="#" class="page-btn">2</a>
+          <a href="#" class="page-btn">3</a>
+          <a href="#" class="page-btn">&raquo;</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="site-logo" style="margin-bottom: 16px;">
+            <span class="logo-leaf" style="background-color: var(--primary-hover);">🌿</span>
+            <span style="color: #ffffff;">GreenCorner</span>
+          </div>
+          <p>GreenCorner là không gian dành cho những người yêu thiên nhiên, chuyên cung cấp cây cảnh mini để bàn, sen đá và chậu gốm mộc tinh tế.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Trang Chính</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="about.html">Giới thiệu</a></li>
+            <li><a href="products.html">Sản phẩm cây cảnh</a></li>
+            <li><a href="blog.html">Cẩm nang chăm sóc</a></li>
+            <li><a href="contact.html">Liên hệ tư vấn</a></li>
+            <li><a href="feedback.html">Hòm thư góp ý</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Chính Sách</h4>
+          <ul class="footer-links">
+            <li><a href="#">Chính sách bảo hành 7 ngày</a></li>
+            <li><a href="#">Quy định vận chuyển giao hàng</a></li>
+            <li><a href="#">Hình thức thanh toán</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Thông Tin Liên Hệ</h4>
+          <div class="footer-contact-item"><span>📍</span><p>123 Đường Cây Xanh, Q.1, TP.HCM</p></div>
+          <div class="footer-contact-item"><span>📞</span><p>Hotline: 0909 123 456</p></div>
+          <div class="footer-contact-item"><span>✉️</span><p>Email: contact@greencorner.vn</p></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 GreenCorner. Tất cả các quyền được bảo lưu.</p>
+        <p>Đồ án môn học Lập trình Web - Giai đoạn 2</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
